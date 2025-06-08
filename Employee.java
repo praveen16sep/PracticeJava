@@ -1,100 +1,43 @@
-package com.java8code;
+package com.javacoe;
 
-public class Employee {
-	private int id;
-    private String name;
-    private int age;
-    private long salary;
-    private String gender;
-    private String deptName;
-    private String city;
-    private int yearOfJoining;
+class Employee {
+	
+	int empId;
+	String empName;
+	
+	
+	public Employee(int empId, String empName) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+	}
+	 
+	
+	
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", getEmpId()=" + getEmpId() + ", getEmpName()="
+				+ getEmpName() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
 
-    public Employee(int id, String name, int age, long salary, String gender, String deptName, String city, int yearOfJoining)
-    {
-    	this.id=id;
-    	this.name=name;
-    	this.age=age;
-    	this.salary=salary;
-    	this.gender=gender;
-    	this.deptName=deptName;
-    	this.city=city;
-    	this.yearOfJoining=yearOfJoining;
-    	
-    }
-    
-    
-    public String toString()
-    {
-    	return "Employee{" + "id= "+id+ "name= "
-               +name+"age= "+age+"salary= "+salary+"gender= "
-    			+gender+"deptName= "+deptName+"city= "+city+"yearOfJoining= "+yearOfJoining;
-    }
-    
-    public void setId(int id)
-    {
-    	this.id=id;
-    }
-    
-    public int getId()
-    {
-    	return id;
-    }
-    
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public int getAge() {
-        return age;
-    }
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	
+	
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getDeptName() {
-        return deptName;
-    }
-
-    public void setDeptName(String deptName) {
-        this.deptName = deptName;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public int getYearOfJoining() {
-        return yearOfJoining;
-    }
-
-    public void setYearOfJoining(int yearOfJoining) {
-        this.yearOfJoining = yearOfJoining;
-    }
+	
 
 }
