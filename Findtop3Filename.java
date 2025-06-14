@@ -43,3 +43,25 @@ map.put("File6",320);
 	}
 
 }
+
+
+ class FileData {
+	public String fileName;
+	public Long fileSize;
+	
+	public FileData(String fileName, Long fileSize)
+	{
+		this.fileName=fileName;
+		this.fileSize=fileSize;
+	}
+
+	public String getFileName()
+	{
+		return fileName;
+	}
+	public Long getFileSize()
+	{
+		return fileSize;
+	}
+
+}
